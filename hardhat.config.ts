@@ -64,7 +64,17 @@ const config: HardhatUserConfig = {
   },
 
   etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY
+    apiKey: process.env.ETHERSCAN_API_KEY,
+    customChains: [
+      {
+        network: 'palmTestnet',
+        chainId: 11297108099,
+        urls: {
+          apiURL: 'https://explorer.palm-uat.xyz/api',
+          browserURL: 'https://explorer.palm-uat.xyz'
+        }
+      }
+    ]
   }
 
 }
