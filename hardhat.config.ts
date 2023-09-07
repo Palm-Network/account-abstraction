@@ -3,6 +3,7 @@ import '@typechain/hardhat'
 import { HardhatUserConfig } from 'hardhat/config'
 import 'hardhat-deploy'
 import '@nomiclabs/hardhat-etherscan'
+import 'dotenv/config'
 
 import 'solidity-coverage'
 
@@ -54,6 +55,8 @@ const config: HardhatUserConfig = {
     localgeth: { url: 'http://localgeth:8545' },
     goerli: getNetwork('goerli'),
     sepolia: getNetwork('sepolia'),
+    palmTestnet: getNetwork('palm-testnet'),
+    palmMainnet: getNetwork('palm-mainnet'),
     proxy: getNetwork1('http://localhost:8545')
   },
   mocha: {
