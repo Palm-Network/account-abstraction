@@ -73,6 +73,14 @@ const config: HardhatUserConfig = {
           apiURL: 'https://explorer.palm-uat.xyz/api',
           browserURL: 'https://explorer.palm-uat.xyz'
         }
+      },
+      {
+        network: 'palmMainnet',
+        chainId: 11297108109,
+        urls: {
+          apiURL: 'https://explorer.palm.io/api',
+          browserURL: 'https://explorer.palm.io'
+        }
       }
     ]
   }
